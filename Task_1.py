@@ -1,12 +1,13 @@
 def main():
     letter = input("Enter a letter of the alphabet: ")
 
-    if letter == "a" or "e" or "i" or "o" or "u" :
+    if letter == "a" or letter == "e" or letter == "i" or letter == "o" or letter == "u":
         print("Entered alphabet is a vowel!")
-    elif letter == "q" or "w" or "r" or "t" or "y" or "p" or "s" or "d" or "f" or "g" or "h" or "j" or "k" or "l" or "z" or "x" or "c" or "v" or "b" or "n" or "m" :
+    elif letter == "q" or letter == "w" or letter == "r" or letter == "t" or letter == "p" or letter == "s" or letter == "d" or letter == "f" or letter == "g" or letter == "h" or letter == "j" or letter == "k" or letter == "l" or letter == "z" or letter == "x" or letter == "c" or letter == "v" or letter == "b" or letter == "n" or letter == "m":
         print("Entered alphabet is a consonant!")
-    else :
+    else:
         print("Sometimes it is a vowel, and sometimes it is a consonant!")
+
   pass
 
 if __name__ == "__main__":
