@@ -26,6 +26,8 @@ def main():
       print(f"{year} is the year of the Tiger")
   elif (year - 2000) % 12 == 11 :
       print(f"{year} is the year of the Hare")
+  elif year < 0 :
+      print("Invalid year!")
   else :
       print("Invalid year!")
   pass
