@@ -1,12 +1,15 @@
 def main():
-  letter = input("Enter a letter of the alphabet: ")
+  month = input("Enter name of the month [ex. June]: ")
+  day = int(input("Enter the day [ex. 5]: "))
 
-  if letter == "a" or letter == "e" or letter == "i" or letter == "o" or letter == "u":
-      print("Entered alphabet is a vowel!")
-  elif letter == "q" or letter == "w" or letter == "r" or letter == "t" or letter == "p" or letter == "s" or letter == "d" or letter == "f" or letter == "g" or letter == "h" or letter == "j" or letter == "k" or letter == "l" or letter == "z" or letter == "x" or letter == "c" or letter == "v" or letter == "b" or letter == "n" or letter == "m":
-      print("Entered alphabet is a consonant!")
+  if (day >= 20 and month == "March") or (day < 21 and month == "June") or (month == "April" or month == "May"):
+      print(f"{month} {day} is in Spring")
+  elif (day >= 21 and month == "June") or (day < 22 and month == "September") or (month == "July" or month == "August"):
+      print(f"{month} {day} is in Summer")
+  elif (day >= 22 and month == "September") or (day < 21 and month == "December") or (month == "October" or month == "November"):
+      print(f"{month} {day} is in Fall")
   else:
-      print("Sometimes it is a vowel, and sometimes it is a consonant!")
+      print(f"{month} {day} is in Winter")
   pass
 
 if __name__ == "__main__":
