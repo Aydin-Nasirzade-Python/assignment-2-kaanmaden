@@ -1,31 +1,38 @@
 def main():
   month = input("Enter a month [ex. March]: ")
   day = int(input("Enter the day [ex. 12]: "))
-
-  if (day > 21 and day < 31 and month == "December") or (day < 20 and day > 0 and month == "January"):
-      print("Your zodiac sign is Capricorn")
-  elif (day > 19 and day < 31 and month == "January") or (day < 19 and day > 0 and month == "February"):
-      print("Your zodiac sign is Aquarius")
-  elif (day > 18 and day < 28 and month == "February") or (day < 21 and day > 0 and month == "March"):
-      print("Your zodiac sign is Pisces")
-  elif (day > 20 and day < 31 and month == "March") or (day < 20 and day > 0 and month == "April"):
-      print("Your zodiac sign is Aries")
-  elif (day > 19 and day < 30 and month == "April") or (day < 21 and day > 0 and month == "May"):
-      print("Your zodiac sign is Taurus")
-  elif (day > 20 and day < 31 and month == "May") or (day < 21 and day > 0 and month == "June"):
-      print("Your zodiac sign is Gemini")
-  elif (day > 20 and day < 30 and month == "June") or (day < 23 and day > 0 and month == "July"):
-      print("Your zodiac sign is Cancer")
-  elif (day > 22 and day < 31 and month == "July") or (day < 23 and day > 0 and month == "August"):
-      print("Your zodiac sign is Leo")
-  elif (day > 22 and day < 31 and month == "August") or (day < 23 and day > 0 and month == "September"):
-      print("Your zodiac sign is Virgo")
-  elif (day > 22 and day < 30 and month == "September") or (day < 23 and day > 0 and month == "October"):
-      print("Your zodiac sign is Libra")
-  elif (day > 22 and day < 31 and month == "October") or (day < 22 and day > 0 and month == "November"):
-      print("Your zodiac sign is Scorpio")
-  elif (day > 21 and day < 31 and month == "November") or (day < 22 and day > 0 and month == "December"):
-      print("Your zodiac sign is Sagittarius")
+  x=True
+  if 1<=day<=31:
+      if (month == "March" and day >= 21) or (month == "April" and day <= 19):
+          sign = "Aries"
+      elif (month == "April" and day >= 20) or (month == "May" and day <= 20):
+          sign = "Taurus"
+      elif (month == "May" and day >= 21) or (month == "June" and day <= 20):
+          sign = "Gemini"
+      elif (month == "June" and day >= 21) or (month == "July" and day <= 22):
+          sign = "Cancer"
+      elif (month == "July" and day >= 23) or (month == "August" and day <= 22):
+          sign = "Leo"
+      elif (month == "August" and day >= 23) or (month == "September" and day <= 22):
+          sign = "Virgo"
+      elif (month == "September" and day >= 23) or (month == "October" and day <= 22):
+          sign = "Libra"
+      elif (month == "October" and day >= 23) or (month == "November" and day <= 21):
+          sign = "Scorpio"
+      elif (month == "November" and day >= 22) or (month == "December" and day <= 21):
+          sign = "Sagittarius"
+      elif (month == "December" and day >= 22) or (month == "January" and day <= 19):
+          sign = "Capricorn"
+      elif (month == "January" and day >= 20) or (month == "February" and day <= 18):
+          sign = "Aquarius"
+      elif (month == "February" and day >= 19) or (month == "March" and day <= 20):
+          sign = "Pisces"
+      else:
+          x=False
+  else:
+      x=False
+  if x:
+      print(f"Your zodiac sign is {sign}")
   else:
       print("Either a month or a day is invalid!")
 
