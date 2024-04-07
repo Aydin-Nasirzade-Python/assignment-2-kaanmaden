@@ -23,7 +23,7 @@ def main():
   elif (month == "September" and 23 <= day <= 30) or (month == "October" and 1 <= day <= 22):
       print("Your zodiac sign is Libra")
   elif (month == "October" and 23 <= day <= 31) or (month == "November" and 1 <= day <= 21):
-      print("Your zodiac sign is Scorpio")
+      print("Your zodiac sign is Scorpion")
   elif (month == "November" and 22 <= day <= 30) or (month == "December" and 1 <= day <= 21):
       print("Your zodiac sign is Sagittarius")
   else:
